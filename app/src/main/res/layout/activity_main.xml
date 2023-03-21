@@ -41,4 +41,73 @@
 
             />
     </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/flBMI"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/item_circular_color_accent_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/flHistory"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flStart">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="BMI"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/default_button_text_size"
+            android:textStyle="bold"
+
+            />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculator"
+        android:textColor="#123139"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/flHistory"
+        app:layout_constraintTop_toBottomOf="@+id/flBMI" />
+
+
+    <FrameLayout
+        android:id="@+id/flHistory"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/item_circular_color_accent_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/flBMI"
+        app:layout_constraintTop_toBottomOf="@+id/flStart">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/history"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/default_button_text_size"
+            android:textStyle="bold"
+
+            />
+    </FrameLayout>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="History"
+        android:textColor="#123139"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/flBMI"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flHistory" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
